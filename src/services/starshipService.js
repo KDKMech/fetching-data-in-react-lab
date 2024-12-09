@@ -14,12 +14,19 @@ const planetList = async (props) => {///this was just a test to see what I was d
 } 
 
 const starshipService = async () => {
-    
+    try {
+        const response = await fetch(`${BASE_URL}starships/`);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error(error);
+    }
 
 }
 
 
 
-export default planetList;
+export default starshipService;
+
 
 
