@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <>
-      <h1>Star Wars SPI Lab!</h1>
+      <h1>Star Wars API Lab!</h1>
       <Search />
       <StarshipList starshipsData={starships}/>
     </>
